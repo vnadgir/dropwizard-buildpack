@@ -16,8 +16,7 @@
 # Configuration for components to use in the buildpack
 ---
 containers:
-  - "JavaBuildpack::Container::Main"
-  - "JavaBuildpack::Container::Tomcat"
+  - "JavaBuildpack::Container::Dropwizard"
 jres:
   - "JavaBuildpack::Jre::OpenJdk"
 frameworks:
