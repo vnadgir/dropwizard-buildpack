@@ -9,6 +9,7 @@ module JavaBuildpack::Container
     def release
       @java_opts << "-Ddw.http.port=$PORT"
       @java_opts << "-Ddw.http.adminPort=$PORT"
+      # 0.7.0: @java_opts << "-Ddw.server.connector.port=$PORT"
 
       "#{@java_home}/bin/java -cp . #{java_opts} #{main_class} server"
     end
